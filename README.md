@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Download
 
-Download the project with git clone [https://marcin6@bitbucket.org/marcin6/klickrent-app.git](https://marcin6@bitbucket.org/marcin6/klickrent-app.git).
+Download the project with git clone [https://github.com/marcin6/react-klickrent.git](https://github.com/marcin6/react-klickrent.git).
 
 Install dependencies `npm install`.
 
