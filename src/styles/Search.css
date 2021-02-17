@@ -1,0 +1,8 @@
+.search-container input {
+    padding: 15px;
+    max-width: 275px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}

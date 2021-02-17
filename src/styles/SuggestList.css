@@ -1,0 +1,33 @@
+.suggestlist-container {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.suggestlist-element {
+    text-align: left;
+}
+
+.suggestlist-category {
+    background: #009fdf;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto;
+    padding-left: 10px;
+}
+
+.suggestlist-category span {
+    font-weight: bold;
+}
+
+.suggestlist-product {
+    padding-left: 10px;
+}
+
+.suggestlist-product ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.suggestlist-product ul li {
+    margin: 5px 0;
+}

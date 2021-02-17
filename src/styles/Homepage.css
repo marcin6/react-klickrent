@@ -1,0 +1,39 @@
+.homepage-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3e3e3e;
+    color: #fff;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+.homepage-header h3 {
+    margin: 0;
+}
+
+.homepage-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.homepage-content-btn {
+    background: #0171b7;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: large;
+    margin: 20px;
+    padding: 10px 15px;
+    max-width: 275px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.homepage-content-btn:hover {
+    background: #0d548c;
+}
