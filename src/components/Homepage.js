@@ -13,15 +13,15 @@ export default function Homepage() {
     const [products, setProducts] = useState([]);
     const [filterProduct, setFilterProduct] = useState([]);
 
-    const getProducts = async() => {
-       await fetch(API_DATA)
+    const getProducts = async () => {
+        await fetch(API_DATA)
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
             })
             .catch(() => setError(true))
-    }  
-    
+    }
+
     const filterProducts = () => {
         if (search.trim() !== '') {
             const copiedProduct = [...products];
@@ -37,12 +37,18 @@ export default function Homepage() {
 
     useEffect(() => {
         getProducts();
-        filterProducts();
+    }, [])
+
+    useEffect(() => {
+        const handlerFilter = setTimeout(() => {
+            filterProducts();
+        }, 300)
+        return () => { clearTimeout(handlerFilter) }
     }, [search])
 
     useEffect(() => {
         if (!isShowing) setFilterProduct('')
-    },[isShowing])
+    }, [isShowing])
 
     return (
         <div className="homepage-container">
